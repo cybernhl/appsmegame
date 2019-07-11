@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/game_info_height"
+                android:background="@drawable/game_puke_bg">
+
+
+    <ImageView
+        android:id="@+id/shadow_left"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/game_info_height"
+        android:background="@drawable/game_corner_gray"
+        android:visibility="invisible"/>
+
+    <!--第一排 左边-->
+    <include
+        android:id="@+id/rl_bet_left"
+        layout="@layout/game_poker_info_five_niuniu"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/game_info_poker_height"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="@dimen/game_djs_three_poker_margin"
+        />
+
+
+    <!--第一排 中间-->
+    <include
+        android:id="@+id/rl_bet_ping"
+        layout="@layout/game_poker_info_five_niuniu"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/game_info_poker_height"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"/>
+
+
+    <!--第一排 右边-->
+    <include
+        android:id="@+id/rl_bet_right"
+        layout="@layout/game_poker_info_five_niuniu"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/game_info_poker_height"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/game_djs_three_poker_margin"
+        android:layout_marginTop="8dp"/>
+
+    <!--比赛开始 提示 -->
+    <include
+        android:id="@+id/view_tip"
+        layout="@layout/game_tip_center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"/>
+
+</RelativeLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_game_bg"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/game_height"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            android:id="@+id/view_fire"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/game_info_height"
+            android:background="@drawable/game_dfj_bg10"/>
+
+        <weking.lib.game.view.game_2.GameDFJRollView
+            android:id="@+id/rool_view_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-15dp"
+            />
+
+        <weking.lib.game.view.game_2.GameDFJRollView
+            android:id="@+id/rool_view_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="40dp"
+            />
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/game_layout_dfj_buttom_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/game_dfj_tool_bouttom_height"
+            android:layout_alignParentBottom="true"
+            />
+
+
+        <ImageView
+            android:id="@+id/iv_gun_canister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/game_dfj_base"
+            />
+
+        <RelativeLayout
+            android:id="@+id/rl_gun_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true">
+
+            <TextView
+                android:id="@+id/tv_no"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"/>
+
+            <ImageView
+                android:id="@+id/iv_gun"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/tv_no"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="-5dp"
+                android:paddingBottom="5dp"
+                android:src="@drawable/game_dfj_cannon_10"/>
+
+            <ImageView
+                android:id="@+id/iv_gun_light"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/iv_gun"
+                android:layout_marginBottom="-5dp"
+                android:layout_centerHorizontal="true"
+          />
+        </RelativeLayout>
+    </RelativeLayout>
+    <!--android:background="@drawable/game_dfj_fire_light"-->
+</RelativeLayout>

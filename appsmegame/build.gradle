@@ -1,0 +1,198 @@
+apply plugin: 'com.android.library'
+//apply plugin: 'com.gladed.androidgitversion'
+
+gradle.projectsEvaluated {
+    tasks.withType(JavaCompile) {
+        options.compilerArgs << "-Xbootclasspath/a:" + System.properties.get("java.home") + "/lib/rt.jar"
+    }
+}
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+    publishNonDefault true
+    defaultConfig {
+        minSdkVersion 14
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionName rootProject.ext.versionName
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+
+    buildTypes {
+        debug {
+            minifyEnabled false //proguard  Yes / No
+            aaptOptions.cruncherEnabled = false
+            debuggable true
+            jniDebuggable true
+            renderscriptDebuggable true
+        }
+        release {
+            aaptOptions.cruncherEnabled = true
+            zipAlignEnabled true
+            minifyEnabled false
+            debuggable false
+            jniDebuggable false
+            renderscriptDebuggable false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ["src/main/jniLibs", "$buildDir/native-libs"]
+        }
+    }
+
+    packagingOptions {
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/ASL2.0'
+        exclude 'META-INF/DEPENDENCIES.txt'
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/dependencies.txt'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/LGPL2.1'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/notice.txt'
+    }
+
+    compileOptions {
+        sourceCompatibility rootProject.ext.javasource
+        targetCompatibility rootProject.ext.javatarget
+    }
+}
+
+configurations {
+}
+
+configurations.all {
+    resolutionStrategy.force "com.android.support:support-annotations:${rootProject.ext.supportLibVersion}"
+}
+
+dependencies {
+
+    implementation fileTree(dir: 'libs', include: ['*.jar','*.aar'])
+
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.android.support:recyclerview-v7:28.0.0'
+//    implementation 'wk-common:wk-common-rxretrofitlib:1.0.1-SNAPSHOT'// maven { url 'http://47.107.239.98:8081/repository/maven-public/' }
+//    implementation 'wk-common:wk-common-utils:1.1.1-SNAPSHOT'// maven { url 'http://47.107.239.98:8081/repository/maven-public/' }
+//    implementation 'wk-common:wk-common-wkimageLoader:1.1.6-SNAPSHOT'// maven { url 'http://47.107.239.98:8081/repository/maven-public/' }
+
+    implementation 'wk.common.imageloader:wk-common-wkimageLoader:1.1.6'
+    implementation 'weking.lib.utils:wk-common-utils:1.1.1'
+    implementation 'weking.lib.rxretrofit:wk-common-rxretrofitlib:1.0.1'
+
+
+//    implementation 'wk-common:wk-common-baseAdapterRcv:1.0-SNAPSHOT'// maven { url 'http://47.107.239.98:8081/repository/maven-public/' }
+
+    implementation 'com.trello:rxlifecycle-components:1.0'
+
+    implementation 'org.greenrobot:eventbus:3.0.0'
+
+//    api project(path: ':giftanim')
+//    api project(':GiftAnim:app')
+//    api 'io.weking.anim:giftanim:0.0.0'
+
+    implementation  'io.weking.anim:giftanim:0.0.0'
+
+    implementation 'com.squareup.retrofit2:retrofit:2.1.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.1.0'
+    implementation 'com.squareup.retrofit2:converter-jackson:2.1.0'
+    implementation 'com.squareup.retrofit2:adapter-rxjava:2.1.0'
+     
+}
+
+//// 移除舊的 jar 檔
+//task deleteOldJar(type: Delete) {
+//    delete 'release/tcp.jar'
+//}
+//
+//// 匯出 jar 檔
+//task exportJar(type: Copy) {
+//    from('build/intermediates/bundles/release/')
+//    into('release/')
+//    include('classes.jar')
+//    // 將匯出的 jar 檔重新命名
+//    rename('classes.jar', 'tcp.jar')
+//}
+
+//http://stackoverflow.com/questions/37807562/how-to-create-single-jar-with-fatjar-gradle
+//https://gist.github.com/kesco/77132337ab0d8dc81016
+//task createJar(type: Jar) {
+//    from {
+//        List<File> allFiles = new ArrayList<>();
+//        configurations.compile.collect {
+//            for (File f : zipTree(it).getFiles()) {
+//                if (f.getName().equals("classes.jar")) {
+//                    allFiles.addAll(zipTree(f).getAt("asFileTrees").get(0).getDir())
+//                }
+//            }
+//        }
+//        allFiles.add(new File('build/intermediates/classes/release'))
+//        allFiles // To return the result inside a lambda
+//    }
+//    archiveName('tcp.jar')
+//}
+//https://stackoverflow.com/questions/24357687/how-to-include-so-library-in-android-studio
+//def archFromName = { name ->
+//    switch (name) {
+//        case ~/.*android-(x86-64|x86_64|amd64).*/:
+//            return "x86_64"
+//        case ~/.*android-(i386|i686|x86).*/:
+//            return "x86"
+//        case ~/.*android-(arm64|aarch64).*/:
+//            return "arm64-v8a"
+//        case ~/.*android-(armhf|armv7|arm-v7|armeabi-v7).*/:
+//            return "armeabi-v7a"
+//        case ~/.*android-(arm).*/:
+//            return "armeabi"
+//        case ~/.*android-(mips).*/:
+//            return "mips"
+//        case ~/.*android-(mips64).*/:
+//            return "mips64"
+//        default:
+//            return null
+//    }
+//}
+
+//task extractNatives << {
+//    project.configurations.compile.each { dep ->
+//        println "Scanning ${dep.name} for native libs"
+//        if (!dep.name.endsWith(".jar"))
+//            return
+//        zipTree(dep).visit { zDetail ->
+//            if (!zDetail.name.endsWith(".so"))
+//                return
+//            print "\tFound ${zDetail.name}"
+//            String arch = archFromName(zDetail.toString())
+//            if (arch != null) {
+//                println " -> $arch"
+//                safeCopy(zDetail.file.absolutePath,
+//                        "$buildDir/native-libs/$arch/${zDetail.file.name}")
+//            } else {
+//                println " -> No valid arch"
+//            }
+//        }
+//    }
+//}
+
+//preBuild.dependsOn(['extractNatives'])
+//
+//exportJar.dependsOn(deleteOldJar, build)
+//apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle'
+//apply from: 'install.gradle'
+apply from: 'bintray.gradle'

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+
+
+    <!--比赛开始 提示 （背景）-->
+    <ImageView
+        android:id="@+id/tishi_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/game_dt"
+        android:visibility="invisible" />
+    <!--比赛开始 提示 （文字）-->
+    <ImageView
+        android:id="@+id/tishi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/tishi_bg"
+        android:layout_alignTop="@id/tishi_bg"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/game_yxjjks"
+        android:visibility="invisible" />
+
+</RelativeLayout>

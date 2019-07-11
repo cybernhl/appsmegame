@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 自定义控件的名称 -->
+    <declare-styleable name="StrokeTextView">
+        <!-- 自定义的属性名称 和对应的单位 -->
+        <attr name="outerColor" format="color|reference" />
+        <attr name="innnerColor" format="color|reference" />
+        <attr name="stroke_Width" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="TRecyclerView">
+        <attr name="isReverse" format="boolean" />
+        <attr name="isRefreshable" format="boolean" />
+        <attr name="itemType" format="reference" />
+        <attr name="headType" format="reference" />
+        <attr name="footType" format="reference" />
+    </declare-styleable>
+
+    <attr name="backgroundCard" format="color" />
+    <attr name="textColor" format="color" />
+    <attr name="textColorBg" format="color" />
+    <attr name="themeType" format="string" />
+    <attr name="themeIcon" format="reference" />
+    <attr name="colorWhite" format="color" />
+
+    <declare-styleable name="RatioLayout">
+        <attr name="ratio" format="float" />
+    </declare-styleable>
+
+    <!--zego viewLive-->
+    <declare-styleable name="ViewLive">
+        <attr name="isBigView" format="boolean" />
+    </declare-styleable>
+
+
+    <declare-styleable name="CustomProgressBar">
+        <attr name="progressColors" format="color"/>
+        <attr name="progressDescColor" format="color"/>
+        <attr name="progressRadius" format="dimension"/>
+        <attr name="max" format="integer"/>
+        <attr name="progress" format="integer"/>
+        <attr name="borderWidth" format="dimension"/>
+        <attr name="progressDesc" format="string"/>
+        <attr name="isShowDesc" format="boolean"/>
+    </declare-styleable>
+</resources>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="126dp"
+    android:layout_centerVertical="true"
+    >
+
+    <ImageView
+        android:id="@+id/iv_car_qpx"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:src="@drawable/icon_startingline_game"
+        android:layout_marginLeft="50dp"
+        />
+
+    <ImageView
+        android:id="@+id/iv_car_zdx"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:src="@drawable/icon_endline_game"
+        android:layout_alignParentRight="true"
+        android:paddingRight="20dp"
+        android:visibility="invisible"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <weking.lib.game.view.car.CrazyCarItemView
+            android:id="@+id/game_car_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+        <weking.lib.game.view.car.CrazyCarItemView
+            android:id="@+id/game_car_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="45dp"
+            />
+        <weking.lib.game.view.car.CrazyCarItemView
+            android:id="@+id/game_car_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="90dp"
+            />
+
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/pb_first"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:visibility="invisible"
+        android:indeterminate="false"
+        android:layout_centerHorizontal="true"
+        android:indeterminateDrawable="@drawable/game_first_progress" />
+
+
+    <ProgressBar
+        android:id="@+id/pb_time"
+        android:layout_width="120dp"
+        android:layout_height="46.5dp"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:visibility="visible"
+        android:indeterminate="false"
+        android:indeterminateDrawable="@drawable/game_jiasu_progress" />
+
+</RelativeLayout>

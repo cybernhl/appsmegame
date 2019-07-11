@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+    >
+
+    <RelativeLayout
+        android:id="@+id/rl_bet_left_no"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/game_poker_info_height"
+        >
+
+        <ImageView
+            android:layout_width="@dimen/game_poker_info_height"
+            android:layout_height="match_parent"
+            android:background="@drawable/game_card_poker_info_bg"/>
+
+        <ImageView
+            android:id="@+id/iv_poker_info_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="17dp"
+            android:src="@drawable/game_card_poker_info_icon_bg_left"/>
+        <!--二张牌-->
+        <RelativeLayout
+            android:id="@+id/rl_pai"
+            android:layout_width="@dimen/game_2poker_info_width"
+            android:layout_height="@dimen/game_pai_item_height"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp">
+
+            <include
+                android:id="@+id/card_1"
+                layout="@layout/game_zjh_kapai_item"
+                android:layout_width="@dimen/game_pai_item_width"
+                android:layout_height="@dimen/game_pai_item_height"
+                android:layout_marginLeft="@dimen/game_djs_three_poker_margin"
+                android:visibility="invisible"/>
+
+            <include
+                android:id="@+id/card_2"
+                layout="@layout/game_zjh_kapai_item"
+                android:layout_width="@dimen/game_pai_item_width"
+                android:layout_height="@dimen/game_pai_item_height"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/game_djs_three_poker_margin"
+                android:visibility="invisible"/>
+
+        </RelativeLayout>
+
+
+        <include
+            layout="@layout/game_layout_base_bet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            />
+
+    </RelativeLayout>
+
+
+    <ImageView
+
+        android:id="@+id/gf_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/rl_bet_left_no"
+        android:layout_alignRight="@id/rl_bet_left_no"
+        android:layout_alignTop="@id/rl_bet_left_no"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="25dp"
+        android:src="@drawable/game_pxt"
+        android:visibility="invisible"/>
+
+    <ImageView
+
+        android:id="@+id/gf_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/gf_bg"
+        android:layout_alignRight="@id/gf_bg"
+        android:layout_alignTop="@id/gf_bg"
+        android:layout_marginTop="2.0dp"
+        android:src="@drawable/game_ico_gdfr_duizi"
+        android:visibility="invisible"/>
+
+
+</RelativeLayout>

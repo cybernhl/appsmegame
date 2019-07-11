@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+
+    >
+
+
+    <!--总下注数-->
+    <weking.lib.game.view.goodview.StrokeTextView
+        android:id="@+id/bet_all"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="@string/game_bei_shu_0"
+        android:textSize="19sp"
+        app:innnerColor="@color/game_app_theme_color"
+        app:outerColor="#000000"/>
+
+    <!--自己下注数-->
+    <weking.lib.game.view.goodview.StrokeTextView
+        android:id="@+id/bet_me"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/bet_all"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="5dp"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp"
+        android:text=" 0 "
+        android:textSize="12sp"
+        app:innnerColor="@color/game_app_theme_color"
+        app:outerColor="#000000"/>
+
+    <!--自己下注数-->
+    <weking.lib.game.view.goodview.StrokeTextView
+        android:id="@+id/textView_bei_shu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/bet_all"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="5dp"
+        android:paddingLeft="2dp"
+        android:paddingRight="3dp"
+        android:text=" ×3 "
+        android:textSize="12sp"
+        app:innnerColor="@color/game_app_theme_color"
+        app:outerColor="#000000"/>
+
+
+</RelativeLayout>

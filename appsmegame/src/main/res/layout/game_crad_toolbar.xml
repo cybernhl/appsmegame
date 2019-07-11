@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/game_djs_tool_bouttom_height"
+                android:background="@drawable/game_card_buttom_bar_bg">
+
+    　
+
+
+    <ImageView
+        android:id="@+id/iv_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/selector_game_card_buttom_menu"/>
+
+    <ImageView
+        android:id="@+id/bet5000"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dp"
+        android:layout_toLeftOf="@id/iv_menu"
+        android:src="@drawable/game_bet_5k_nor"/>
+
+    <ImageView
+        android:id="@+id/bet1000"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dp"
+        android:layout_toLeftOf="@id/bet5000"
+        android:src="@drawable/game_bet_1k_nor"/>
+
+    <ImageView
+        android:id="@+id/bet100"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dp"
+        android:layout_toLeftOf="@id/bet1000"
+        android:src="@drawable/game_bet_100_nor"/>
+
+    <ImageView
+        android:id="@+id/bet10"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dp"
+        android:layout_toStartOf="@+id/bet100"
+        android:src="@drawable/game_bet_10"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_money"
+        android:layout_width="wrap_content"
+        android:layout_height="29dp"
+        android:layout_alignBottom="@+id/iv_menu"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/game_card_bottom_bar_money_bg">
+
+        <ImageView
+            android:id="@+id/money"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/game_diamond"/>
+
+        <TextView
+            android:id="@+id/tv_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5.0dp"
+            android:layout_toRightOf="@id/money"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:maxWidth="60.0dp"
+            android:text="0"
+            android:textColor="@color/black"
+            android:textSize="15.0sp"/>
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/chongzhi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="3dp"
+        android:layout_toRightOf="@id/rl_money"
+        android:src="@drawable/game_poker_recharge"/>
+
+
+</RelativeLayout>

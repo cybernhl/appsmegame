@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="42dp"
+    >
+
+
+    <RelativeLayout
+        android:id="@+id/rl_car"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        >
+        <ImageView
+            android:id="@+id/car_1"
+            android:layout_width="67dp"
+            android:layout_height="40dp"
+            android:src="@drawable/icon_redcar_s_game"
+            android:scaleType="centerCrop"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            />
+        <ProgressBar
+            android:id="@+id/pb_accelerate_car"
+            android:layout_width="115dp"
+            android:layout_height="50dp"
+            android:indeterminate="false"
+            android:visibility="invisible"
+            android:indeterminateDrawable="@drawable/game_car_accelerate_progress" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_accelerate_prop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_nitrogen"
+        android:layout_gravity="center_vertical"
+        android:visibility="invisible"
+        />
+
+</FrameLayout>

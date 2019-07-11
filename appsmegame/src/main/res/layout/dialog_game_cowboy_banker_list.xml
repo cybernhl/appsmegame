@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/game_cowboy_banker_lsit_bg">
+
+
+    <RelativeLayout
+        android:id="@+id/title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        >
+
+        <TextView
+            android:id="@+id/tv_banker_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:text="@string/game_cowboy_banker_list"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/game_cowboy_banker_text_size"
+            />
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/tv_banker_no"
+            android:layout_marginBottom="50dp"
+            android:layout_marginTop="10dp"/>
+
+        <ImageView
+            android:id="@+id/close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5.0dip"
+            android:src="@drawable/game_close_ic"
+            android:visibility="gone"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_banker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/bg_dialog_banker_button">
+
+            <TextView
+                android:id="@+id/tv_banker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="20dp"
+                android:text="@string/game_cowboy_banker_request_apply"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/game_cowboy_banker_text_size"
+
+                />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

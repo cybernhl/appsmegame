@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="theme_color">#ffc700</color>
+    <color name="appsme_theme_color">#5100da</color>
+    <color name="grey300">#e0e0e0</color>
+    <color name="transparent_black_400">#88000000</color>
+    <color name="normal_text">#666666</color>
+    <color name="game_zww_money_by">#6f000000</color>
+    <color name="game_zww_light_bg_by">#5f000000</color>
+    <color name="game_select_game_dialog_view_bg">#cc000000</color>
+    <color name="game_select_game_dialog_bg">#99000000</color>
+    <color name="game_app_theme_color">#FF9C00</color>
+    <color name="game_conwboy_history_scale_bg">#12ffffff</color>
+
+</resources>

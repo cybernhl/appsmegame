@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:background="@android:color/transparent">
+
+
+
+    <ImageView
+        android:id="@+id/iv_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/selector_game_car_buttom_menu_function"/>
+
+    <ImageView
+        android:id="@+id/bet5000"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dp"
+        android:layout_toLeftOf="@id/iv_menu"
+        android:src="@drawable/icon_chip_500_nor"/>
+
+    <ImageView
+        android:id="@+id/bet1000"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dp"
+        android:layout_toLeftOf="@id/bet5000"
+        android:src="@drawable/icon_chip_100_nor"/>
+
+    <ImageView
+        android:id="@+id/bet100"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dp"
+        android:layout_toLeftOf="@id/bet1000"
+        android:src="@drawable/icon_chip_50_nor"/>
+
+    <ImageView
+        android:id="@+id/bet10"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dp"
+        android:layout_toStartOf="@+id/bet100"
+        android:src="@drawable/icon_chip_10"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_money"
+        android:layout_width="wrap_content"
+        android:layout_height="29dp"
+        android:layout_alignBottom="@+id/iv_menu"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/icon_diamond_bg_game">
+
+        <ImageView
+            android:id="@+id/money"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/icon_navigation_sca"/>
+
+        <TextView
+            android:id="@+id/tv_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5.0dp"
+            android:layout_toRightOf="@id/money"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:maxWidth="60.0dp"
+            android:text="0"
+            android:textColor="@color/black"
+            android:textSize="12.0sp"/>
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/chongzhi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="3dp"
+        android:layout_toRightOf="@id/rl_money"
+        android:src="@drawable/icon_recharge_y"/>
+
+
+</RelativeLayout>

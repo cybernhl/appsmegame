@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/game_zww_tool_bouttom_height"
+                android:background="@drawable/game_zww_buttom_bar_bg">
+
+    <RelativeLayout
+        android:id="@+id/rl_money"
+        android:layout_width="wrap_content"
+        android:layout_height="29dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/game_zww_buttom_bar_money_bg">
+
+        <ImageView
+            android:id="@+id/money"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/icon_navigation_sca"/>
+
+        <TextView
+            android:id="@+id/tv_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5.0dp"
+            android:layout_toRightOf="@id/money"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:maxWidth="60.0dp"
+            android:text="0"
+            android:textColor="@color/black"
+            android:textSize="15.0sp"/>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/chongzhi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="3dp"
+        android:layout_toRightOf="@id/rl_money"
+        android:gravity="center"
+        android:paddingRight="10dp"
+        android:src="@drawable/icon_z"/>
+    <!--
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+            android:background="@drawable/game_zww_buttom_start"
+            android:gravity="center"
+            android:paddingBottom="7dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingTop="7dp"
+            android:text="@string/gaem_start"
+            android:textColor="@color/colorWhite"
+            android:textSize="14sp"/>-->
+    <ImageView
+        android:id="@+id/iv_fire"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/selector_game_zww_start"/>
+
+    <ImageView
+        android:id="@+id/bet1000"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        android:layout_toLeftOf="@id/iv_fire"
+        android:scaleType="centerInside"
+        android:src="@drawable/game_zww_dount_1000"/>
+
+    <ImageView
+        android:id="@+id/bet100"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        android:layout_toLeftOf="@id/bet1000"
+        android:scaleType="centerInside"
+        android:src="@drawable/game_zww_dount_100"/>
+
+    <ImageView
+        android:id="@+id/bet10"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        android:layout_toLeftOf="@id/bet100"
+        android:scaleType="centerInside"
+        android:src="@drawable/game_zww_dount_10"/>
+
+</RelativeLayout>

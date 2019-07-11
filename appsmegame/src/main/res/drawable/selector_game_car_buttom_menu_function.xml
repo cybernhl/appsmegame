@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/icon_function_b_game_live" android:state_pressed="true"/>
+    <item android:drawable="@drawable/icon_function_game_live"/>
+
+</selector>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+                android:oneshot="true">
+    <item android:drawable="@drawable/game_dfj_firelight_0" android:duration="50"/>
+    <item android:drawable="@drawable/game_dfj_fire_light_adv_1" android:duration="50"/>
+    <item android:drawable="@drawable/game_dfj_fire_light_adv_1" android:duration="50"/>
+    <item android:drawable="@drawable/game_dfj_fire_light_adv_2" android:duration="50"/>
+    <item android:drawable="@drawable/game_dfj_fire_light_adv_3" android:duration="50"/>
+    <item android:drawable="@drawable/game_dfj_fire_light_adv_4" android:duration="50"/>
+    <item android:drawable="@drawable/game_dfj_fire_light_adv_5" android:duration="50"/>
+    <item android:drawable="@drawable/game_dfj_fire_light_adv_6" android:duration="50"/>
+    <item android:drawable="@drawable/game_dfj_fire_light_adv_7" android:duration="50"/>
+    <item android:drawable="@drawable/game_dfj_fire_light_adv_8" android:duration="50"/>
+    <item android:drawable="@drawable/game_dfj_fire_light_adv_9" android:duration="50"/>
+    <item android:drawable="@drawable/game_dfj_fire_light_adv_10" android:duration="50"/>
+    <item android:drawable="@drawable/game_dfj_fire_light_adv_11" android:duration="50"/>
+    <item android:drawable="@drawable/game_dfj_firelight_0" android:duration="50"/>
+</animation-list>

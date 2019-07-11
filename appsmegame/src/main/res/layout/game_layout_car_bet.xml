@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/root_container"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/icon_startbg_game"
+        android:layout_alignParentBottom="true"
+        >
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/game_car_toolbar"
+        android:layout_alignParentBottom="true"
+        ></include>
+
+    <include
+        layout="@layout/game_car_bet_view"
+        ></include>
+
+    <RelativeLayout
+        android:id="@+id/game_view"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/game_car_end_view"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        layout="@layout/game_car_end"
+        android:visibility="gone"
+        ></include>
+
+    <ImageView
+        android:id="@+id/iv_sai_che"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/icon_waiting_game"
+        android:visibility="gone"
+        />
+    </RelativeLayout>
+</RelativeLayout>

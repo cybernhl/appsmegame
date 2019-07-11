@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+    >
+
+    <RelativeLayout
+        android:id="@+id/rl_bet_left_no"
+        android:layout_width="@dimen/game_poker_info_width"
+        android:layout_height="@dimen/game_cowboy_poker_info_height"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+
+        <include
+            android:id="@+id/v_poker"
+            layout="@layout/game_poker_info_five_itme_cowboy"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/game_cowboy_poker_height"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="5dp"
+            />
+
+
+        <include
+            android:id="@+id/v_bet"
+            layout="@layout/game_layout_conwboy_bet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <weking.lib.game.view.cardView.cowboy.CowboyBetView
+            android:id="@+id/cbv_bet"
+            android:layout_width="@dimen/game_poker_info_width"
+            android:layout_height="@dimen/game_cowboy_poker_info_bet_view_height"
+            android:layout_below="@id/v_bet"
+            android:layout_marginTop="-14dp"
+            />
+
+    </RelativeLayout>
+</RelativeLayout>

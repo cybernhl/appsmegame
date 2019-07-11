@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:orientation="horizontal">
+
+    <RelativeLayout
+        android:id="@+id/rl_no"
+        android:layout_width="@dimen/game_cowboy_banker_poker_info_wight"
+        android:layout_height="@dimen/game_cowboy_banker_info_height"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/game_cowboy_banker_bg">
+
+        <RelativeLayout
+            android:id="@+id/rl_banker"
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             >
+
+            <ImageView
+                android:id="@+id/iv_banker_icom"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_marginLeft="5dp"
+            />
+
+            <TextView
+                android:id="@+id/tv_banker_name"
+                style="@style/text_end10_Line1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/iv_banker_icom"
+                android:maxEms="5"
+                android:textColor="@color/colorWhite"
+                android:textSize="11sp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_banker_win_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rl_banker"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/bg_game_bowboy_banker_moeny"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp">
+
+            <TextView
+                android:id="@+id/tv_banker_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorWhite"
+                android:textSize="13sp"/>
+
+            <ImageView
+                android:id="@+id/tv_host_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:src="@drawable/game_cowboy_flow_water"/>
+
+        </RelativeLayout>
+
+        <include
+            layout="@layout/game_poker_info_five_itme_cowboy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="8dp"/>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_banker"
+        android:layout_width="@dimen/game_poker_info_width"
+        android:layout_height="25dp"
+        android:layout_below="@id/rl_no"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/game_cowboy_switch_banker"/>
+</RelativeLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+                android:layout_width="@dimen/game_cowboy_poker_width"
+                android:layout_height="@dimen/game_cowboy_poker_height"
+    android:background="@drawable/game_cowboy_poker_front"
+    android:orientation="vertical"
+    android:padding="2.0dp">
+
+    <ImageView
+        android:id="@+id/iv_pokercode"
+        android:layout_width="8.0dp"
+        android:layout_height="8.0dp"
+        android:src="@drawable/game_poker_a"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/iv_pokerSizesl"
+        android:layout_width="8.0dp"
+        android:layout_height="8.0dp"
+        android:layout_below="@id/iv_pokercode"
+        android:src="@drawable/game_poker_heart"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/iv_pokerSizesm"
+        android:layout_width="18.0dp"
+        android:layout_height="18.0dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/game_poker_heart"
+        android:visibility="visible" />
+</RelativeLayout>

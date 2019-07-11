@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_da_yu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/game_height"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/game_zww_bg">
+
+        <include
+            android:id="@+id/view_toolbar"
+            layout="@layout/game_zww_buttom_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_gaem"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/view_toolbar"
+            android:background="@drawable/game_zww_bg">
+
+            <weking.lib.game.view.game_2.GameZWWRollView
+                android:id="@+id/rool_view_top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="70dp"
+                />
+
+            <weking.lib.game.view.game_2.GameZWWRollView
+                android:id="@+id/rool_view_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="10dp"
+                />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <ImageView
+            android:id="@+id/iv_light_bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/game_zww_light_bg_by"
+            android:visibility="invisible"/>
+
+        <ImageView
+            android:id="@+id/iv_light"
+            android:layout_width="190dp"
+            android:layout_height="190dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/game_zww_succed_light"
+            android:visibility="invisible"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_zhua"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:id="@+id/view_no"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:paddingBottom="125dp"/>
+
+        <ImageView
+            android:id="@+id/iv_zhua_left"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignTop="@id/view_no"
+            android:layout_marginBottom="50dp"
+            android:layout_marginRight="-24dp"
+            android:layout_marginTop="-17dp"
+            android:layout_toLeftOf="@id/view_no"
+            android:padding="20dp"
+            android:src="@drawable/game_zww_paw_l_10"/>
+        <!--
+                <RelativeLayout
+                    android:id="@+id/view_roll_item"
+                    android:layout_width="@dimen/game_zww_item_iv_width"
+                    android:layout_height="@dimen/game_zww_item_iv_height"
+                    android:layout_alignTop="@id/view_no"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:paddingBottom="10dp"
+
+                    >
+
+                    <ImageView
+                        android:id="@+id/iv_head"
+                        android:layout_width="@dimen/game_zww_item_iv_width"
+                        android:layout_height="@dimen/game_zww_item_iv_height"
+                        android:layout_alignParentBottom="true"
+                        android:src="@mipmap/ic_launcher"/>
+
+                    <TextView
+                        android:id="@+id/tv_money"
+                        android:layout_width="@dimen/game_zww_item_iv_width"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/iv_head"
+                        android:background="#0ff"
+                        android:gravity="center"
+                        android:text="aaa"/>
+                </RelativeLayout>-->
+
+        <include
+            android:id="@+id/view_roll_item"
+            layout="@layout/item_game_roll_bottom_view"
+            android:layout_width="@dimen/game_zww_item_iv_width"
+            android:layout_height="@dimen/game_zww_item_iv_height"
+            android:layout_alignTop="@id/view_no"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="45dp"
+            android:visibility="invisible"
+            />
+
+        <RelativeLayout
+            android:id="@+id/rl_zhua_no"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:paddingBottom="80dp"
+
+            >
+
+            <ImageView
+                android:id="@+id/iv_connect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/game_zww_connect_10"/>
+
+
+            <ImageView
+                android:id="@+id/iv_zhua_righ"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_below="@id/iv_connect"
+                android:layout_marginLeft="-30dp"
+                android:layout_marginTop="-8dp"
+                android:layout_toRightOf="@id/iv_connect"
+                android:padding="20dp"
+                android:src="@drawable/game_zww_paw_r_10"/>
+
+            <ImageView
+                android:id="@+id/iv_zhou"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_below="@id/iv_connect"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="-5dp"
+                android:src="@drawable/game_zww_core_10"/>
+
+        </RelativeLayout>
+
+
+        <ImageView
+            android:id="@+id/iv_line"
+            android:layout_width="4dp"
+            android:layout_height="match_parent"
+            android:layout_above="@id/rl_zhua_no"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/game_zww_line_10"/>
+    </RelativeLayout>
+
+
+</RelativeLayout>

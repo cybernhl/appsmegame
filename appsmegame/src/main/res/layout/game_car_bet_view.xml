@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ProgressBar
+        android:id="@+id/pb_black_car"
+        android:layout_width="123.5dp"
+        android:layout_height="110dp"
+        android:indeterminate="false"
+        android:layout_marginLeft="22dp"
+        android:indeterminateDrawable="@drawable/game_black_car_progress" />
+    <ProgressBar
+        android:id="@+id/pb_red_car"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:indeterminate="false"
+        android:layout_centerHorizontal="true"
+        android:indeterminateDrawable="@drawable/game_red_car_progress" />
+    <!--<ImageView-->
+        <!--android:layout_width="123.5dp"-->
+        <!--android:layout_height="110dp"-->
+        <!--android:src="@drawable/icon_carred_game"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--/>-->
+    <ProgressBar
+        android:id="@+id/pb_yellow_car"
+        android:layout_width="123.5dp"
+        android:layout_height="110dp"
+        android:indeterminate="false"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="22dp"
+        android:indeterminateDrawable="@drawable/game_yellow_car_progress" />
+
+    <ImageView
+        android:id="@+id/iv_end"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/icon_waitcover_black"
+        android:scaleType="centerCrop"
+        android:visibility="gone"
+        />
+
+    <include
+        android:id="@+id/view_left_bet"
+        layout="@layout/game_car_bet_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pb_black_car"
+        android:layout_marginTop="-30dp"
+        android:layout_marginLeft="7.5dp"
+    ></include>
+
+    <include
+        android:id="@+id/view_center_bet"
+        layout="@layout/game_car_bet_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pb_black_car"
+        android:layout_marginTop="-30dp"
+        android:layout_centerHorizontal="true"
+        ></include>
+
+    <include
+        android:id="@+id/view_right_bet"
+        layout="@layout/game_car_bet_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pb_black_car"
+        android:layout_marginTop="-30dp"
+        android:layout_marginRight="7.5dp"
+        android:layout_alignParentRight="true"
+        ></include>
+
+    <RelativeLayout
+        android:id="@+id/rl_count_down"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_stopwatch_game"
+            />
+
+        <TextView
+            android:id="@+id/tv_count_down"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorWhite"
+            android:text="30"
+            android:textSize="10dp"
+            android:layout_centerInParent="true"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>

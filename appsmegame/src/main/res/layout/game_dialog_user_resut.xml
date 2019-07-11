@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_view"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <LinearLayout
+            android:id="@+id/ll"
+            android:layout_width="240.0dip"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="65.0dip"
+            android:background="@drawable/game_result_bg"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rl"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/game_user_result_bg1">
+
+                <TextView
+                    android:id="@+id/num2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="15.0dip"
+                    android:layout_marginTop="45.0dip"
+                    android:drawableLeft="@drawable/game_result_jb"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="#ffe9a62e"
+                    android:textSize="22.0sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_gift"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+            <TextView
+                android:id="@+id/tv"
+                android:layout_width="wrap_content"
+                android:layout_height="40.0dip"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:text=" 打赏后运气更佳哦！"
+                android:textColor="#ffbab6dc"
+                android:textSize="15.0sp" />
+
+            <LinearLayout
+                android:id="@+id/gift_ll"
+                android:layout_width="240.0dip"
+                android:layout_height="85.0dip"
+                android:gravity="bottom|center"
+                android:orientation="horizontal">
+
+                <include
+                    android:id="@+id/result_gift1"
+                    layout="@layout/game_gift_item"
+                    android:layout_width="65.0dip"
+                    android:layout_height="75.0dip"
+                    />
+
+                <include
+                    android:id="@+id/result_gift2"
+                    layout="@layout/game_gift_item"
+                    android:layout_width="65.0dip"
+                    android:layout_height="75.0dip"
+                    android:layout_marginLeft="10.0dip" />
+
+                <include
+                    android:id="@+id/result_gift3"
+                    layout="@layout/game_gift_item"
+                    android:layout_width="65.0dip"
+                    android:layout_height="75.0dip"
+                    android:layout_marginLeft="10.0dip" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/dashang"
+                android:layout_width="70.0dip"
+                android:layout_height="35.0dip"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="8.0dip"
+                android:layout_marginTop="8.0dip"
+                android:background="@drawable/game_ds"
+                android:gravity="center"
+                android:text=" 打赏"
+                android:textColor="@color/colorWhite"
+                android:textSize="15.0sp" />
+            </LinearLayout>
+            <View
+                android:id="@+id/v1"
+                android:layout_width="fill_parent"
+                android:layout_height="10.0dip" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/img1"
+            android:layout_width="290.0dip"
+            android:layout_height="120.0dip"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/game_winner" />
+
+        <View
+            android:id="@+id/line4"
+            android:layout_width="1.0dip"
+            android:layout_height="40.0dip"
+            android:layout_below="@id/ll"
+            android:layout_centerHorizontal="true"
+            android:background="@color/colorWhite" />
+
+        <ImageView
+            android:id="@+id/close"
+            android:layout_width="35.0dip"
+            android:layout_height="35.0dip"
+            android:layout_below="@id/line4"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/game_close_ic" />
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/targetView"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/diamond"
+        android:visibility="invisible"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>

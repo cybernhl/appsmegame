@@ -1,0 +1,41 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <!--一行文字style-->
+    <style name="text_end10_Line1">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxEms">10</item>
+        <item name="android:singleLine">true</item>
+
+    </style>
+    <!--提示对话框-->
+    <style name="VersionDialogStyle" parent="android:style/Theme.Dialog">
+        <item name="android:background">#00000000</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+
+    </style>
+    //==================透明背景Dialog============//
+
+    <style name="TransparentDialogStyle" parent="android:style/Theme.Dialog">
+        <item name="android:background">#00000000</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+    //==================透明背景Dialog============//
+    <!-- ActionSheet进出动画 -->
+    <style name="game_crad_menu_Animation">
+        <item name="android:windowEnterAnimation">@anim/game_card_menu_pop_in</item>
+        <item name="android:windowExitAnimation">@anim/game_card_menu_pop_out</item>
+    </style>
+</resources>

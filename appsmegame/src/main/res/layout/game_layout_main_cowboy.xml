@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:cb="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/root_container"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+    >
+    <!--庄家-->
+
+    <include
+        android:id="@+id/bet_banker"
+        layout="@layout/game_layout_cowboy_banker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/card_fapai"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="25dp"
+        android:layout_marginLeft="@dimen/game_cowboy_margin"/>
+
+    <!--庄家-->
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/game_height"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true">
+        <!--主页区域-->
+        <include
+            layout="@layout/game_layout_cowboy"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/game_info_height"
+            />
+        <!--底部栏-->
+        <include
+            android:id="@+id/crad_toolbar"
+            layout="@layout/game_crad_cowboy_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/game_djs_tool_bouttom_height"
+            android:layout_alignParentBottom="true"/>
+        <!--主页区域-->
+        <FrameLayout
+            android:id="@+id/cowboy_frame"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/game_info_height"/>
+
+    </RelativeLayout>
+
+
+    <!--发牌-->
+
+    <ImageView
+        android:id="@+id/card_fapai"
+        android:layout_width="28dp"
+        android:layout_height="35dp"
+        android:layout_centerInParent="true"
+        android:visibility="invisible"/>
+    <!--发牌-->
+</RelativeLayout>

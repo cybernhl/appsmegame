@@ -1,0 +1,81 @@
+<resources>
+    <string name="game_bake_no1">競猜榜</string>
+    <string name="game_bet">押註</string>
+    <string name="task_get">領取</string>
+    <string name="dialog_tishi">溫馨提示</string>
+    <string name="cancel">取消</string>
+    <string name="dialog_quit">退出</string>
+    <string name="gift_recharge_tip2">余額不足，去充值？</string>
+    <string name="confirm">確定</string>
+    <string name="game_win">勝</string>
+    <string name="game_lose">負</string>
+    <string name="game_ping">平</string>
+    <string name="game_history">歷史記錄</string>
+    <string name="gaem_start">開始</string>
+    <string name="game_bei_shu_3"> ×3 </string>
+    <string name="game_bei_shu_2"> ×2 </string>
+    <string name="game_bei_shu_22"> ×22 </string>
+    <string name="game_bei_shu_0"> 押註 </string>
+
+    <!--欢乐牛仔-->
+    <string name="game_cowboy_banker_list">上庄列表</string>
+    <string name="game_cowboy_banker_request_apply">申请上庄</string>
+    <string name="game_cowboy_banker_request_cancel">申请下庄</string>
+    <string name="game_cowboy_banker_order">顺序</string>
+    <string name="game_cowboy_banker_player">玩家</string>
+    <string name="game_cowboy_banker">庄家</string>
+    <string name="game_cowboy_banker_text">庄</string>
+    <string name="game_cowboy_my_moeny">本家</string>
+    <string name="game_cowboy_next_game_tiem">休息一下%1$dS</string>
+    <string name="game_cowboy_next_wait_game_tiem">游戏即将开始</string>
+    <string name="game_cowboy_banker_liushui">庄家流水</string>
+    <string name="game_cowboy_banker_onePoker">局号</string>
+    <string name="game_cowboy_banker_poker_type">牌型</string>
+    <string name="game_cowboy_banker_end">结算</string>
+    <string name="game_cowboy_banker_news">最新</string>
+    <string name="game_cowboy_banker_info">庄家当前的输赢</string>
+    <string name="game_cowboy_banker_tian">天</string>
+    <string name="game_cowboy_banker_di">地</string>
+    <string name="game_cowboy_banker_ren">人</string>
+    <string name="game_cowboy_banker_scale">胜负走势图</string>
+    <string name="game_cowboy_cancel_banker_end_room">您当前正在上庄,确定要下庄离开直播间吗?</string>
+
+    <string name="game_cowboy_no_niu">没牛</string>
+    <string name="game_cowboy_niu1">牛一</string>
+    <string name="game_cowboy_niu2">牛二</string>
+    <string name="game_cowboy_niu3">牛三</string>
+    <string name="game_cowboy_niu4">牛四</string>
+    <string name="game_cowboy_niu5">牛五</string>
+    <string name="game_cowboy_niu6">牛六</string>
+    <string name="game_cowboy_niu7">牛七</string>
+    <string name="game_cowboy_niu8">牛八</string>
+    <string name="game_cowboy_niu9">牛九</string>
+    <string name="game_cowboy_niuniu">牛牛</string>
+    <!--欢乐牛仔-->
+
+
+    <!--选择游戏-->
+    <string name="room_dialog_game_title">选择游戏</string>
+    <string name="room_dialog_game_begin">选择游戏</string>
+    <string name="game_switch_game_error">切换游戏失败,重试</string>
+
+    <string name="game_switch_name_live">才艺直播</string>
+    <string name="game_switch_name_zjh">敲三家</string>
+    <string name="game_switch_name_dezhou">天天德普</string>
+    <string name="game_switch_name_niuniu">欢乐斗</string>
+    <string name="game_switch_name_zww">夹娃娃</string>
+    <string name="game_switch_name_dfj">星际大战</string>
+    <string name="game_switch_name_cowboy">欢乐牛仔</string>
+
+
+    <string name="game_switch_introduce_live">来,请开始你的表演</string>
+    <string name="game_switch_introduce_zjh">Bo~Bo~Bo~,Gold给给</string>
+    <string name="game_switch_introduce_dezhou">天天这个，天天那个的德普</string>
+    <string name="game_switch_introduce_niuniu">尽管来,能把主播泡走算我输</string>
+    <string name="game_switch_introduce_zww">这很现实,你就是抓不起来</string>
+    <string name="game_switch_introduce_dfj">很久以前,在一个遥远的银河系...</string>
+    <string name="game_switch_introduce_cowboy">有没有牛,心里没有一点数吗</string>
+    <!--选择游戏-->
+
+
+</resources>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+    <ImageView
+        android:id="@+id/iv_bet_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/betting_black"
+        />
+
+    <LinearLayout
+        android:layout_width="106dp"
+        android:layout_height="50dp"
+        android:orientation="vertical"
+        android:layout_marginTop="23dp"
+        android:layout_centerHorizontal="true"
+        >
+        <TextView
+            android:id="@+id/tv_bet_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/icon_exchange_sca"
+            android:drawablePadding="5dp"
+            android:layout_marginLeft="10dp"
+            android:shadowColor="#dc000a53"
+            android:shadowDx="2.4492935982947064e-16"
+            android:shadowDy="4"
+            android:shadowRadius="8"
+            android:textSize="18sp"
+            android:textColor="#00e0ff"
+            android:gravity="end"
+            android:text=""
+            />
+        <TextView
+            android:id="@+id/tv_bet_me"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:shadowColor="#dc000a53"
+            android:shadowDx="2.4492935982947064e-16"
+            android:shadowDy="4"
+            android:shadowRadius="8"
+            android:textSize="13sp"
+            android:textColor="@color/colorWhite"
+            android:gravity="end"
+            android:text=""
+            android:layout_gravity="right"
+            android:layout_marginRight="10dp"
+            android:textStyle="italic"
+            />
+
+    </LinearLayout>
+
+    <weking.lib.game.view.car.CrazyCarBetView
+        android:id="@+id/car_bet_left"
+        android:layout_width="106dp"
+        android:layout_height="60dp"
+        android:layout_centerInParent="true"
+        >
+    </weking.lib.game.view.car.CrazyCarBetView>
+    
+    <ImageView
+        android:id="@+id/iv_win"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/diamond_emo"
+        android:layout_centerInParent="true"
+        android:visibility="invisible"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set android:ordering="sequentially"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <set android:interpolator="@android:interpolator/decelerate_cubic" android:ordering="together">
+        <objectAnimator android:duration="80" android:valueFrom="1" android:valueTo="1.45" android:valueType="floatType" android:propertyName="scaleX" />
+        <objectAnimator android:duration="80" android:valueFrom="1" android:valueTo="1.45" android:valueType="floatType" android:propertyName="scaleY" />
+    </set>
+    <set android:interpolator="@android:interpolator/decelerate_cubic" android:ordering="together">
+        <objectAnimator android:duration="150" android:valueFrom="1.45" android:valueTo="1" android:valueType="floatType" android:propertyName="scaleX" />
+        <objectAnimator android:duration="150" android:valueFrom="1.45" android:valueTo="1" android:valueType="floatType" android:propertyName="scaleY" />
+    </set>
+</set>

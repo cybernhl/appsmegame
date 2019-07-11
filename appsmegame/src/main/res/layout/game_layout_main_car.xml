@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rl_game"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentBottom="true"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            >
+            <RelativeLayout
+                android:id="@+id/rl_car_vision"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@drawable/icon_road_game"
+                />
+
+            <RelativeLayout
+                android:id="@+id/rl_car_invision"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@drawable/icon_road_game"
+                />
+        </RelativeLayout>
+        <weking.lib.game.view.car.GameCrazyCarView
+            android:id="@+id/game_car_view"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:layout_centerVertical="true"
+            >
+        </weking.lib.game.view.car.GameCrazyCarView>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

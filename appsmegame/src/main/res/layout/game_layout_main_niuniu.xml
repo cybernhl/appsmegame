@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:cb="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/root_container"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/game_height"
+    >
+
+
+    <include
+        layout="@layout/game_layout_niuniu"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/game_info_height"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/game_height"
+        android:orientation="vertical">
+        <!--主页区域-->
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/game_info_height">
+
+            <include
+                android:layout_marginBottom="2dp"
+                layout="@layout/game_card_progress"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/game_djs_progress_all_height"
+                android:layout_alignParentBottom="true"/>
+
+        </RelativeLayout>
+        <!--底部栏-->
+        <include
+            android:id="@+id/crad_toolbar"
+            layout="@layout/game_crad_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/game_djs_tool_bouttom_height"
+            android:layout_alignParentBottom="true"/>
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/card_fapai"
+        android:layout_width="28dp"
+        android:layout_height="35dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+
+        android:visibility="invisible"/>
+
+</RelativeLayout>

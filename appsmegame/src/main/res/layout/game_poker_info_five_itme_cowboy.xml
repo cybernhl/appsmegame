@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+    >
+
+
+    <!--五张牌-->
+    <RelativeLayout
+        android:id="@+id/rl_pai"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/game_cowboy_poker_height"
+        >
+
+        <include
+            android:id="@+id/card_1"
+            layout="@layout/game_crad_cowboy_kapai_item"
+            android:layout_width="@dimen/game_cowboy_poker_width"
+            android:layout_height="@dimen/game_cowboy_poker_height"
+            android:visibility="invisible"/>
+
+        <include
+            android:id="@+id/card_2"
+            layout="@layout/game_crad_cowboy_kapai_item"
+            android:layout_width="@dimen/game_cowboy_poker_width"
+            android:layout_height="@dimen/game_cowboy_poker_height"
+            android:layout_marginLeft="@dimen/game_cowboy_poker_to_margin_left"
+            android:layout_toRightOf="@id/card_1"
+            android:visibility="invisible"/>
+
+        <include
+            android:id="@+id/card_3"
+            layout="@layout/game_crad_cowboy_kapai_item"
+            android:layout_width="@dimen/game_cowboy_poker_width"
+            android:layout_height="@dimen/game_cowboy_poker_height"
+            android:layout_marginLeft="@dimen/game_cowboy_poker_to_margin_left"
+            android:layout_toRightOf="@id/card_2"
+            android:visibility="invisible"/>
+
+        <include
+            android:id="@+id/card_4"
+            layout="@layout/game_crad_cowboy_kapai_item"
+            android:layout_width="@dimen/game_cowboy_poker_width"
+            android:layout_height="@dimen/game_cowboy_poker_height"
+            android:layout_marginLeft="@dimen/game_cowboy_poker_to_margin_left"
+            android:layout_toRightOf="@id/card_3"
+            android:visibility="invisible"/>
+
+        <include
+            android:id="@+id/card_5"
+            layout="@layout/game_crad_cowboy_kapai_item"
+            android:layout_width="@dimen/game_cowboy_poker_width"
+            android:layout_height="@dimen/game_cowboy_poker_height"
+            android:layout_marginLeft="@dimen/game_cowboy_poker_to_margin_left"
+            android:layout_toRightOf="@id/card_4"
+            android:visibility="invisible"/>
+
+        <ImageView
+            android:id="@+id/gf_result_bg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/game_cowboy_tip_bet_area_bg"
+            android:visibility="invisible"/>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/wk_dialog_background">
+
+
+    <RelativeLayout
+        android:id="@+id/title_layout"
+        android:layout_width="240.0dip"
+        android:layout_height="40dp"
+        android:background="@drawable/wk_dialog_head_background">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/game_history"
+            android:textColor="@color/colorWhite"
+            android:textSize="17sp"
+            />
+
+        <ImageView
+            android:id="@+id/close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5.0dip"
+            android:src="@drawable/game_close_ic"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/wk_dialog_bottom_background"
+        android:layout_below="@+id/title_layout"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:id="@+id/ll2"
+            android:layout_width="240.0dip"
+            android:layout_height="240.0dip"
+
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/head"
+                android:layout_width="240.0dip"
+                android:layout_height="40.0dip"
+                android:orientation="vertical"/>
+
+            <include
+                layout="@layout/game_result"
+                android:layout_width="240.0dip"
+                android:layout_height="200.0dip"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>
